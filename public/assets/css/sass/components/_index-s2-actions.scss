@@ -1,0 +1,496 @@
+.nos-actions {
+    // background-color: $color1;
+    padding: 1vw;
+    margin: auto;
+    background: $color9;
+    // margin-bottom: 10vh;
+    border-radius: 15px;
+    color: white;
+    width: 100%;
+
+    .title-section-action {
+        margin-top: 2vh;
+        margin-bottom: 7vh;
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 4rem;
+    }
+
+    .texte-actions {
+        text-align: center;
+        background-color: white;
+        border-radius: 2vw;
+        width: max-content;
+        padding: 1vw;
+        margin: auto;
+        color: $color1;
+
+        .title-actions {
+            font-weight: $Bold;
+            margin-bottom: 1vh;
+
+        }
+    }
+
+
+
+    .container-actions {
+        display: flex;
+        margin: auto;
+        justify-content: space-between;
+        width: 85%;
+        margin-top: 5vh;
+        margin-bottom: 3vh;
+
+
+        .card-actions {
+            flex: 1;
+            align-items: center;
+            margin: 1vh;
+            padding: 5vh;
+            background-color: white;
+            border-radius: 5px;
+            color: $color1;
+            height: 80vh;
+
+            .img-connexion {
+                max-width: 100%;
+                height: 33%;
+            }
+
+            .card-title-actions {
+                text-align: center;
+                font-weight: $Bold;
+                margin-top: 1vh;
+                margin-bottom: 1vh;
+            }
+        }
+
+
+
+
+
+    }
+
+    .bouton-section2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+
+        .btn2-actions {
+            // flex: 1;
+            border: 3px solid $color1;
+            cursor: pointer;
+            outline: none;
+            transition: 0.2s;
+            width: fit-content;
+            padding: 0 1rem;
+            height: 32px;
+            margin-top: 2vh;
+            background-color: white;
+            border-radius: 5px;
+            color: $color1;
+            font-weight: $Bold;
+
+        }
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+
+        color: white;
+        height: auto;
+        padding: 2% !important;
+        margin: 0 !important;
+
+
+        .title-section-action {
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+
+        .texte-actions {
+            // border: 2px solid blue;
+            text-align: center;
+            background-color: white;
+            border-radius: 2vw;
+            width: 100%;
+            padding: 1vw;
+            // margin: 0 auto 2% !important;
+            color: $color1;
+
+            .title-actions {
+                font-weight: $Bold;
+                margin-bottom: 1vh;
+
+            }
+        }
+
+        .container-actions {
+            // border: 2px solid rgb(0, 183, 255);
+
+            display: block !important;
+            margin-top: 0 !important;
+            height: auto;
+            width: fit-content;
+
+            .card-actions {
+                // border: 2px solid blue;
+
+                width: 100%;
+                height: auto;
+                padding: 2%;
+                margin: 2vh auto 0 !important;
+                border-radius: 0 !important;
+
+
+
+                // height: auto !important;
+                .img-connexion {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .card-title-actions {
+                    text-align: center;
+                    font-weight: $Bold;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+                }
+
+                p {
+                    text-align: center;
+                }
+            }
+        }
+
+        .bouton-section2 {
+            margin-bottom: 2% !important;
+
+            .btn2-actions {
+                margin-top: 0 !important;
+            }
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+        color: white;
+        height: auto;
+
+        .title-section-action {
+            margin-top: 2vh;
+            margin-bottom: 7vh;
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+
+        .texte-actions {
+            text-align: center;
+            background-color: white;
+            border-radius: 2vw;
+            width: 100%;
+            padding: 1vw;
+            margin: auto;
+            color: $color1;
+        }
+
+        .title-actions {
+            font-weight: $Bold;
+            margin-bottom: 1vh;
+
+        }
+
+        .container-actions {
+            height: auto;
+            display: block !important;
+
+            .card-actions {
+
+                width: 100%;
+                height: auto;
+
+                // height: auto !important;
+                .img-connexion {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .card-title-actions {
+                    text-align: center;
+                    font-weight: $Bold;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+                }
+            }
+        }
+
+        .bouton-section2 {
+            margin-bottom: 2% !important;
+        }
+
+
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+
+        color: white;
+        height: auto;
+
+
+        .title-section-action {
+            margin-top: 2vh;
+            margin-bottom: 7vh;
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+
+        .texte-actions {
+            text-align: center;
+            background-color: white;
+            border-radius: 2vw;
+            width: 100%;
+            padding: 1vw;
+            margin: auto;
+            color: $color1;
+        }
+
+        .title-actions {
+            font-weight: $Bold;
+            margin-bottom: 1vh;
+
+        }
+
+        .container-actions {
+            height: auto;
+            display: block !important;
+
+            .card-actions {
+
+                width: 100%;
+                height: auto;
+
+                // height: auto !important;
+                .img-connexion {
+                    width: 100%;
+                    height: auto;
+                }
+
+                .card-title-actions {
+                    text-align: center;
+                    font-weight: $Bold;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+                }
+            }
+        }
+
+        .bouton-section2 {
+            margin-bottom: 2% !important;
+        }
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+        padding: 1vw;
+        margin: auto;
+        background: $color9;
+        // margin-bottom: 10vh;
+        border-radius: 15px;
+        color: white;
+        width: 89%;
+
+        .title-section-action {
+            margin-top: 2vh;
+            margin-bottom: 7vh;
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+
+        .texte-actions {
+            text-align: center;
+            background-color: white;
+            border-radius: 2vw;
+            width: max-content;
+            padding: 1vw;
+            margin: auto;
+            color: $color1;
+        }
+
+        .title-actions {
+            font-weight: $Bold;
+            margin-bottom: 1vh;
+
+        }
+
+        .container-actions {
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            width: 85%;
+            margin-top: 5vh;
+            margin-bottom: 3vh;
+
+
+            .card-actions {
+                flex: 1;
+                align-items: center;
+                margin: 1vh;
+                background-color: white;
+                border-radius: 5px;
+                color: $color1;
+                height: auto;
+                padding: 5vh;
+
+                .img-connexion {
+                    width: 100%;
+                    height: 30%;
+                }
+
+                .card-title-actions {
+                    text-align: center;
+                    font-weight: $Bold;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+                }
+
+                p {
+                    margin-bottom: 5vh;
+                }
+            }
+
+
+        }
+
+        .bouton-section2 {
+            display: flex;
+            width: 33%;
+            margin: auto;
+
+            .btn2-actions {
+                flex: 1;
+                border: 3px solid $color1;
+                cursor: pointer;
+                outline: none;
+                width: max-content;
+                transition: 0.2s;
+                height: 32px;
+                margin-top: 2vh;
+                background-color: white;
+                border-radius: 5px;
+                color: $color1;
+                font-weight: $Bold;
+
+            }
+        }
+    }
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+
+        padding: 1vw;
+        margin: auto;
+        background: $color7;
+        // margin-bottom: 10vh;
+        border-radius: 15px;
+        color: white;
+        width: 89%;
+
+        .title-section-action {
+            margin-top: 2vh;
+            margin-bottom: 7vh;
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+        }
+
+        .texte-actions {
+            text-align: center;
+            background-color: white;
+            border-radius: 2vw;
+            width: max-content;
+            padding: 1vw;
+            margin: auto;
+            color: $color1;
+        }
+
+        .title-actions {
+            font-weight: $Bold;
+            margin-bottom: 1vh;
+
+        }
+
+        .container-actions {
+            display: flex;
+            margin: auto;
+            justify-content: space-between;
+            width: 85%;
+            margin-top: 5vh;
+            margin-bottom: 3vh;
+
+
+            .card-actions {
+                flex: 1;
+                align-items: center;
+                margin: 1vh;
+                background-color: white;
+                border-radius: 5px;
+                color: $color1;
+                height: auto;
+                padding: 5vh;
+
+                .img-connexion {
+                    width: 100%;
+                    height: 30%;
+                }
+
+                .card-title-actions {
+                    text-align: center;
+                    font-weight: $Bold;
+                    margin-top: 1vh;
+                    margin-bottom: 1vh;
+                }
+
+                p {
+                    margin-bottom: 5vh;
+                }
+            }
+
+        }
+
+        .bouton-section2 {
+            display: flex;
+            width: 33%;
+            margin: auto;
+
+            .btn2-actions {
+                flex: 1;
+                border: 3px solid $color1;
+                cursor: pointer;
+                outline: none;
+                width: max-content;
+                transition: 0.2s;
+                height: 32px;
+                margin-top: 2vh;
+                background-color: white;
+                border-radius: 5px;
+                color: $color1;
+                font-weight: $Bold;
+
+            }
+        }
+    }
+}

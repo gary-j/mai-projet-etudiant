@@ -1,0 +1,42 @@
+//TOOLS
+@import 'tools/mixin';
+@import 'tools/reset-css';
+@import 'tools/colors';
+@import 'tools/fonts';
+@import 'tools/containers';
+
+//ELEMENTS
+
+//COMPONENTS
+@import 'components/header';
+@import 'components/header-small-screen';
+@import 'components/header-video';
+@import 'components/confirmation_inscription';
+@import 'components/index-s1-presentation';
+@import 'components/index-s2-actions';
+@import 'components/index-s3-actualites';
+@import 'components/index-s4Xsmall';
+@import 'components/index-s4Small-caroussel';
+@import 'components/index-s4-caroussel';
+@import 'components/index-s5-antennes';
+@import 'components/index-s6-marraine';
+@import 'components/index-s6-mentors';
+@import 'components/index-s7-partenaires';
+@import 'components/index-s8-newsletter';
+@import 'components/footer';
+
+
+//PAGES
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/equipe-afrique';
+@import 'pages/evenements';
+@import 'pages/inscription';
+@import 'pages/connexion';
+@import 'pages/request-password';
+@import 'pages/check-email';
+@import 'pages/reset-password';
+@import 'pages/dons';
+@import 'pages/adherent';
+@import 'pages/benevole';
+@import 'pages/mentor';

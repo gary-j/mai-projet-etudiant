@@ -1,0 +1,205 @@
+.nos-mentors {
+    // border: 2px solid orange;
+    padding: 5vh 0;
+    background: $color7;
+    border-radius: 15px;
+    color: white;
+    width: 85%;
+    margin: auto;
+
+
+    .title {
+        // border: 2px solid rgb(32, 91, 218);
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 4rem;
+        margin-bottom: 5vh;
+
+    }
+
+
+    .container-mentor {
+        // border: 2px solid yellow;
+
+        .texte-mentors {
+            // border: 2px solid green;
+            margin: 0 auto;
+
+            h3,
+            p {
+                text-align: center;
+
+            }
+        }
+
+        .container-card-mentor {
+            // border: 2px solid blue;
+            display: flex;
+
+            .mots-gras {
+                font-weight: $Bold;
+            }
+
+
+            .card {
+                // border: 2px solid goldenrod;
+                flex: 1;
+                display: flex;
+                align-items: center;
+                padding-top: 5vw;
+                padding-bottom: 5vw;
+                justify-content: space-between;
+                background-color: $color6;
+                margin: 3vh;
+                border-radius: 2vh;
+                color: $color1;
+
+                h3 {
+                    text-align: center;
+                    font-weight: $Bold;
+                }
+
+                &.mentor1 {
+                    background-color: $color6;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    .texte-mentor1 {
+                        padding: 1vh;
+                    }
+                }
+
+                &.mentor2 {
+                    padding: 1vh;
+                    background-color: $color6;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+
+                    .texte-mentor2 {
+                        padding: 1vw;
+                    }
+                }
+            }
+        }
+    }
+
+    .container-btn-all-mentors {
+        // border: 2px solid slategrey;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vw;
+
+        .btn-accueil-mentors {
+            // border: 2px solid fuchsia;
+            background: $color6;
+            color: $color7;
+            // margin-bottom: 5vh;
+            border-radius: 2vh;
+            padding: 2vh 8vw;
+            font-weight: $Bold;
+            border: 1px solid $color1;
+        }
+
+    }
+
+
+
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+
+        // background: yellow; 
+        .texte-mentors {
+            width: 50%;
+            text-align: center;
+        }
+
+        .container-card-mentor {
+            display: block !important;
+
+            .mentor1 {
+                display: block !important;
+
+                .div-mentor1 {
+                    // border: 2px solid red;
+
+                    img {
+                        width: 100%;
+                        margin: auto !important;
+                        // text-align: center;
+                    }
+                }
+
+            }
+
+            .mentor2 {
+                display: block !important;
+
+                .div-mentor2 {
+                    // border: 2px solid red;
+
+                    img {
+                        width: 100%;
+                        margin: auto !important;
+                        // text-align: center;
+                    }
+                }
+
+            }
+        }
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+        // background: red;
+        .texte-mentors {
+            width: 50%;
+            text-align: center;
+        }
+
+        .container-card-mentor {
+            display: block !important;
+        }
+
+
+    }
+
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+        // background: blue;
+        .texte-mentors {
+            width: 50%;
+            text-align: center;
+        }
+
+        .container-card-mentor {
+            display: block !important;
+        }
+
+    }
+
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+        // background: green;
+
+
+
+    }
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+        // background: purple;
+
+
+
+    }
+
+}

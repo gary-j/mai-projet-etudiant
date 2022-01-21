@@ -1,0 +1,19 @@
+.chk-pw{
+    margin-top : 35vh;
+    text-align: center;
+    font-weight: $Bold;
+    font-size: 4rem;
+    margin-bottom: 1vh;
+}
+.retry {
+    text-decoration : underline;
+}
+
+.conteneur-check {
+    background-color : green;
+    margin : 5vh auto;
+    width : 50%;
+    padding : 2%;
+    color : white;
+    font-weight : $Bold;
+}

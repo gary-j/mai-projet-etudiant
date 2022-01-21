@@ -1,0 +1,199 @@
+.actualites {
+    // border: 2px solid orange;
+    padding: 5vh 0;
+    margin-top: 30vh;
+
+
+    .title {
+        // border: 2px solid rgb(32, 91, 218);
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 4rem;
+        margin-bottom: 5vh;
+
+    }
+
+    .container-actu {
+        // border: 2px solid fuchsia;
+        display: flex;
+        // justify-content: center;
+        // flex-direction: row;
+        // align-items: center;
+        padding-bottom: 5vh;
+        width: 100%;
+
+
+        .actu {
+            border: 0.5px solid $color1;
+            flex: 1;
+            padding: 1vh;
+
+            &.actu:nth-of-type(2) {
+                margin: 0 2vw;
+            }
+
+            .titre-actu {
+                text-align: center;
+                margin-bottom: 5vh;
+                font-style: oblique;
+                font-weight: $Bold;
+            }
+
+            .container-img {
+                // border: 1px solid green;
+                margin-bottom: 5vh;
+
+                .img-actu {
+                    width: 100%;
+                }
+            }
+
+            .container-btn {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 10vh;
+
+                .btn-actu {
+                    background: #0E2C40;
+                    color: white;
+                    border-radius: 1vw;
+                    padding: 1vw;
+                    font-weight: bold;
+                    letter-spacing: 0.1rem;
+                }
+            }
+
+            p {
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .container-btn-all-articles {
+        // border: 2px solid springgreen;
+        display: flex;
+        justify-content: center;
+        margin-top: 1vh;
+        font-weight: bold;
+
+        .btn-actu {
+            // border: 2px solid mediumvioletred;
+            padding: 2vh;
+            background: #0E2C40;
+            color: white;
+            border-radius: 1vw;
+            font-weight: bold;
+            letter-spacing: 0.1rem;
+
+        }
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        // background: yellow;         
+
+
+        .title {
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+            margin-bottom: 5vh;
+        }
+
+        .container-actu {
+            display: block;
+            padding-bottom: 5vh;
+            width: 100%;
+        }
+
+        .actu {
+            margin: 2vh !important;
+        }
+
+        .container-btn {
+            margin-top: 2vh;
+        }
+
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+
+
+
+        .title {
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+            margin-bottom: 5vh;
+        }
+
+        .container-actu {
+            display: block;
+            padding-bottom: 5vh;
+            width: 100%;
+        }
+
+        .actu {
+            margin: 2vh !important;
+        }
+
+        .container-btn {
+            margin-top: 2vh;
+        }
+
+
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+
+
+        .title {
+            text-align: center;
+            font-weight: $Bold;
+            font-size: 4rem;
+            margin-bottom: 5vh;
+        }
+
+        .container-actu {
+            display: block;
+            padding-bottom: 5vh;
+            width: 100%;
+        }
+
+        .actu {
+            margin: 2vh !important;
+        }
+
+        .container-btn {
+            margin-top: 2vh;
+        }
+
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+
+        width: 100%;
+
+
+
+    }
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+
+        width: 100%;
+
+
+
+    }
+
+    display: none;
+}

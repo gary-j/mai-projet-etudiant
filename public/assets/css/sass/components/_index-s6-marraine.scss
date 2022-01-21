@@ -1,0 +1,183 @@
+.Notre-marraine {
+    margin-top: 30vh;
+    margin-bottom: 15vh;
+
+    .container-marraine {
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // background: $color6;
+        // border: 5px solid $color1;
+        // border-radius: 50%;
+        height: fit-content;
+        font-size: 14px;
+        color: $color1;
+        margin-top : 18vh;
+        padding-bottom : 4vh;
+
+
+        .content-marraine {
+            display: flex;
+
+            iframe {
+                margin: auto;
+                width: 40vw;
+                border: 4mm ridge goldenrod;
+            }
+        }
+
+        .content-marraine2 {
+            display: flex;
+
+            .texte-marraine {
+                margin-top: 7vh;
+                padding: 9vh;
+
+            }
+        }
+
+    }
+
+    .title-marraine {
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 3rem;
+        margin-bottom: 3vh;
+        margin-top: 8vh;
+
+    }
+
+    .mots-gras {
+        font-weight: $Bold;
+    }
+
+           // X-Small devices (portrait phones, less than 576px)
+           @media (max-width: 575.98px) {      
+            //  background: yellow; 
+            .container-marraine {
+               height : fit-content;
+               display : block;
+               margin-top : 10vh;
+            }
+             .content-marraine {
+            display : block!important;
+            margin : 1vh;
+            // border : 3px solid black;
+            padding : 1vh;
+
+             iframe {
+               display : block!important;
+               margin : auto!important;
+                width: 50%!important;
+                border: 4mm ridge goldenrod;
+     
+            }
+            .texte-marraine {
+               
+                margin :auto;
+                // border : 3px solid red;
+                text-align : center;
+
+ 
+             }
+            }
+            
+
+          
+        }
+
+            // Small devices (landscape phones, less than 768px)
+            @media (min-width: 576px) and (max-width: 767.98px) { 
+            //   background: red;
+              .container-marraine {
+                height : fit-content;
+                display : block;
+                margin-top : 10vh;
+             }
+              .content-marraine {
+             display : block!important;
+             margin : 1vh;
+             // border : 3px solid black;
+             padding : 1vh;
+ 
+              iframe {
+                display : block!important;
+                margin : auto!important;
+                 width: 50%!important;
+                 border: 4mm ridge goldenrod;
+      
+             }
+             .texte-marraine {
+                
+                margin : auto;
+                 // border : 3px solid red;
+                 text-align : center;
+                 
+ 
+  
+              }
+             }
+            
+           
+
+
+            }
+
+
+            // Medium devices (tablets, less than 992px)
+            @media (min-width: 768px) and (max-width: 991.98px) { 
+            // background: blue;
+            .container-marraine {
+                height : fit-content;
+                display : block;
+                margin-top : 10vh;
+             }
+              .content-marraine {
+             display : block!important;
+             margin : 1vh;
+             // border : 3px solid black;
+             padding : 1vh;
+ 
+              iframe {
+                display : block!important;
+                margin : auto!important;
+                 width: 50%!important;
+                 border: 4mm ridge goldenrod;
+      
+             }
+             .texte-marraine {
+                
+                 margin : auto;
+                 // border : 3px solid red;
+                 text-align : center;
+                 
+ 
+  
+              }
+             }
+           
+            
+
+            }
+
+
+        // Large devices (desktops, less than 1200px)
+        @media (min-width: 992px) and (max-width: 1199.98px) { 
+
+        // background: green;
+
+
+
+        }
+
+        // X-Large devices (large desktops, less than 1400px)
+        @media (min-width: 1200px) and (max-width: 1399.98px) { 
+
+        // background: purple;
+
+
+
+}
+           }
+        

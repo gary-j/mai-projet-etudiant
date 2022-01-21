@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier mot de passe- Mama Africa Innovation{% endblock %}
+
+{% block body %}
+
+<body class="bg-request">
+    {# {% for flashError in app.flashes('reset_password_error') %}
+        <div class="alert alert-danger" role="alert">{{ flashError }}</div>
+    {% endfor %} #}
+
+  
+   
+
+    {{ form_start(requestForm) }}
+     <h1>Modifier le mot de passe </h1>
+    
+        {{ form_row(requestForm.email) }}
+        <div>
+            
+        </div>
+         <small class="sml-pw">
+                Saisissez votre adresse mail, un lien vous sera envoyé afin de modifier votre mot de passe.
+    </small>
+        <button class="request-btn">Envoyer le mail  </button>
+    {{ form_end(requestForm) }}
+</body>
+{% endblock %}

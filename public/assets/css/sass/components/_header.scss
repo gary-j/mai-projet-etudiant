@@ -1,0 +1,247 @@
+.site-header {
+    // border: 2px solid goldenrod;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0; // fait office de margin-auto/centrer, car on a un_containers.scss
+    color: $blanc;
+    border-radius: 10px;
+    width: 100vw;
+    // display: block;
+    z-index: 99;
+    transition: top 0.6s;
+
+    .header-menu {
+        // border: 2px solid rgb(0, 204, 255);
+
+        width: 100%;
+        // background: $color8;
+        // background-color: rgba(255, 255, 255, 0.79);
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .navigation {
+            // border: 2px solid green;
+
+            // background-color: white;
+            flex-basis: content;
+            // display: flex;
+            margin: auto;
+
+            ul {
+                flex-basis: content;
+                // border: 2px solid green;
+                display: flex;
+                align-items: flex-start;
+
+                &.sub-menu,
+                &.search-box {
+                    display: none;
+                }
+
+                div {
+                    // border: 1px solid gold;
+                    float: left;
+                    background-color: $color1;
+
+                    &:not(.logo) {
+                        height: 5rem;
+                        line-height: 5rem;
+                    }
+
+                    &.logo {
+                        background-color: transparent;
+
+                    }
+
+
+                    li {
+                        // border: 1px solid fuchsia;
+                        display: inline-block;
+                        position: relative;
+                        height: 5rem;
+
+                        &:hover a {
+                            background-color: $blanc;
+                            color: $color1;
+                        }
+
+                        &:hover .sub-menu {
+                            display: block;
+                            position: absolute;
+                            background-color: $blanc;
+                            color: $color1;
+                            border: 1px solid $color1;
+                            border-top: none;
+                            border-radius: 5%;
+                            width: max-content;
+                        }
+
+                        &.btn-don-navbar {
+                            background: $color6;
+                            color: $color1;
+                            border: 1px solid $color3;
+                            border-radius: 3px;
+
+                            a {
+                                font-weight: $Medium;
+                                // border: 1px solid red;
+
+
+                                &:hover {
+                                    background: inherit !important;
+                                    color: white;
+                                }
+                            }
+
+                            &:hover {
+                                color: white;
+                                background: $color3;
+
+                                a {
+                                    color: white;
+                                    background-color: $color3;
+                                }
+                            }
+                        }
+
+                        .sub-menu li {
+                            // border: 2px solid red;
+                            display: block;
+
+                            &:hover a {
+                                background-color: $blanc;
+                                color: $color1;
+                                font-weight: $Bold;
+                            }
+
+                        }
+
+                        .prog-navbar {
+                            background: gray;
+                            padding: 0 1vw;
+                        }
+
+                        a {
+                            width: 100%;
+                            padding: 0 1vw;
+                            // text-decoration: none;
+                        }
+
+                        img {
+                            height: 2rem;
+                            // width: 2rem;
+                            vertical-align: middle;
+                            cursor: pointer;
+
+                        }
+
+                        .fas {
+                            vertical-align: middle;
+                        }
+
+                        svg {
+                            height: 23rem;
+                            width: 23rem;
+
+                            @media (min-width: 1124px) and (max-width: 1223.98px) {
+
+                                height: 15rem;
+                                width: 15rem;
+
+                            }
+                        }
+
+                        // Barre de recherche
+                        &:hover .search-box {
+                            display: flex;
+                            position: absolute;
+                            left: -10vw;
+                            background-color: $blanc;
+                            color: $color1;
+                            border: 2px solid $color1;
+                            border-top: none;
+                            border-radius: 5%;
+                            padding: 0.5rem;
+                            // width: 20vw;
+
+                        }
+
+                        .search-txt {
+                            // cf _mixin line 105
+                            // border: 2px solid green;
+                            float: left;
+                            padding: 0;
+                            color: $color1;
+                            width: 17vw;
+                            font-size: 1.5rem;
+                            font-weight: $Regular;
+
+                        }
+
+                    }
+
+                }
+
+            }
+        }
+
+    }
+
+    // Hide navbar on scroll down and show on scroll up
+
+    &.animate {
+        top: -25rem;
+    }
+
+    &.sticky {
+        top: 0;
+        z-index: 99;
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        // background: yellow; 
+
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        //  background: red;
+
+
+
+
+    }
+
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        //    background: blue;
+
+
+
+    }
+
+
+    // Large devices (desktops, less than 1200px)
+    @media (max-width: 1123.98px) {
+        display: none;
+        // background: green;
+    }
+
+
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1224px) and (max-width: 1399.98px) {
+
+        //  background: purple;
+
+
+
+
+
+    }
+}

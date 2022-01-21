@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription- Mama Africa Innovation{% endblock %}
+
+{% block body %}
+    <body class="bg-img">
+   
+    {{ form_start(registrationForm) }}
+      <h1>Inscription</h1>
+        {{ form_row(registrationForm.email) }}
+        {{ form_row(registrationForm.password, {
+            label: 'Password'
+        }) }}
+       
+        <button type="submit" class="btn">S'inscrire</button>
+    {{ form_end(registrationForm) }}
+    </body>
+{% endblock %}

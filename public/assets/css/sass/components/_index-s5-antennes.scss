@@ -1,0 +1,158 @@
+.antennes {
+    // border: 2px solid orange;
+    padding: 5vh 5vw;
+    // display: none;
+
+    .title {
+        // border: 2px solid rgb(32, 91, 218);
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 4rem;
+        margin-bottom: 5vh;
+    }
+
+    .container {
+        // border: 2px solid fuchsia;
+        // display: flex;
+        // flex-wrap: wrap;
+
+        .row {
+            margin-bottom: 2vh;
+            // border: 2px solid goldenrod;
+            text-align: center;
+        }
+
+        .antennes {
+            .liste-pays {
+                span {
+                    padding: 0 1vw;
+                    font-weight: $Medium;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: $blanc;
+                        background: $color5;
+                    }
+                }
+            }
+
+            .mapmonde {
+                // border: 2px solid rgb(32, 165, 218);
+
+                //1300px
+                // background-image: url("../../img/carte-contact-antennes/globe-world-map.png");
+                background-image: url("../../img/carte-contact-antennes/antennes-mama-africa-innovation-mondial.png");
+                background-size: contain;
+                background-position: center center;
+                background-repeat: no-repeat;
+                height: 70vh;
+                width: 100%;
+                position: relative;
+
+                .layer-pin {
+                    // border: 2px solid rgb(218, 32, 193);
+                    z-index: 90;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: inherit;
+                    height: inherit;
+
+                    .cls-2 {
+                        fill: none;
+                        stroke: rgba(17, 85, 131, 0);
+                        stroke-width: 3px;
+                        fill-rule: evenodd;
+                    }
+                }
+
+                .pop-up-contact {
+                    z-index: 999;
+                    display: none;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: rgba(0, 0, 0, 0.584);
+                    position: relative;
+                    //mettre transition background-color au hover
+
+                    .container-contact {
+                        position: absolute;
+                        top: 0;
+                        left: 30%;
+                        width: 40vw;
+                        border: 0.5rem solid white;
+                        border-top: none;
+
+                        // border-radius: 2px;
+                        background-color: white;
+
+
+                        .close-btn {
+                            // border: 2px solid rgb(32, 165, 218);
+                            // display: block;
+                            float: right;
+                            text-align: right;
+                            color: $color5;
+                            cursor: pointer;
+                        }
+
+                        .info-contact {
+                            // border: 2px solid rgb(116, 218, 32);
+                            // display: block;
+                            display: none;
+
+                            img,
+                            svg {
+                                // border: 2px solid rgb(32, 165, 218);
+
+                                display: block;
+                                width: 100%;
+                                height: 30vh;
+
+                                .cls-1 {
+                                    fill-rule: evenodd;
+                                }
+                            }
+
+                            a {
+                                // border: 2px solid pink;
+                                display: block;
+                                margin-top: 1vh;
+                                padding: 1vh 0;
+                                font-weight: $Regular;
+                                color: white;
+                                background-color: $color3;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {}
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {}
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {}
+
+
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+}

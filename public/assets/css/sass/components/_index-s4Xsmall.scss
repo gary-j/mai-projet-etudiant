@@ -1,0 +1,98 @@
+.carousselXsmall {
+    display: none;
+    padding: 5vh 0;
+    background-color: white;
+    // border : 2px solid red;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+
+
+
+    .title {
+        // border: 2px solid rgb(32, 91, 218);
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 4rem;
+        margin-bottom: 1vh;
+
+    }
+
+    .autoplayXsmall {
+
+        /* Grow */
+        .card {
+            // border: 2px solid rgb(32, 91, 218);
+
+            .card-img {
+                // border: 2px solid red;
+
+                img {
+
+                    padding: 4vh 2vw 2vh 2vw;
+                    height: 340px;
+                    margin: auto;
+                    object-fit: contain;
+                    // border: 2px solid goldenrod;
+                    position: relative;
+                }
+
+            }
+
+            .noms {
+
+                font-weight: $Bold;
+                text-align: center;
+                // margin-left: -10%;
+                // margin-top: 5%;
+            }
+
+            .text-fe {
+                margin: 2vh 2vw;
+                text-align: center;
+            }
+
+
+
+
+
+        }
+
+        .hover-carousel:hover,
+        .hover-carousel:focus,
+        .hover-carousel:active {
+            transform: scale(1.1);
+
+        }
+
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+
+        // background-color: rgb(135, 222, 174);
+        display: block;
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        display: none;
+
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        display: none;
+
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+        display: none;
+    }
+
+    // X-Large devices (large desktops, less than 1400px)
+    @media (min-width: 1200px) and (max-width: 1399.98px) {
+        display: none;
+    }
+}

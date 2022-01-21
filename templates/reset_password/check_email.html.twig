@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Email envoyé- Mama Africa Innovation{% endblock %}
+
+{% block body %}
+        <h1 class="chk-pw">Confirmation </h1>
+                <div class="conteneur-check"> 
+                    
+                            <p>
+                                Un email contenant un lien pour modifier votre mot de passe vient de vous être envoyé.
+                                Ce lien expire dans 1 heure.
+                            </p>
+                            <p>N'oubliez pas de vérifier vos spams 
+                                ou 
+                                <a class="retry" href="{{ path('app_forgot_password_request') }}">réessayer</a>.
+                            </p>
+                    
+                </div>
+
+{% endblock %}

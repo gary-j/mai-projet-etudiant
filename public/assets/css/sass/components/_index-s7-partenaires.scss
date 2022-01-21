@@ -1,0 +1,76 @@
+.nos-partenaires {
+    // border: 2px solid lightcoral;
+    padding: 5vh 0;
+
+}
+
+.title {
+    // border: 2px solid rgb(32, 91, 218);
+    // margin-top: 20vh;
+    margin-bottom: 15vh;
+    // padding-top: 25vh;
+    text-align: center;
+    font-weight: $Bold;
+    font-size: 4rem;
+}
+
+
+.logos-partenaires {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-bottom: 80px;
+}
+
+.logo-FrenchImpact,
+.logo-dira-partners,
+.logo-brainstorm-visuals,
+.logo-keitas-systems, 
+.logo-tempeus,
+.logo-queope
+{
+    width: 14vw;
+}
+
+
+.logo-search-your-team,
+.logo-congo-invest-consulting,
+.logo-winnies,
+.logo-jamaafunding,
+.logo-dira-partners,
+.logo-centre-euro-Africa,
+.logo-groupe-de-presse {
+    width: 14vw;
+}
+
+.logo-fiad,
+.logo-bv-agency,
+.logo-powerful-africa {
+    width: 17vw;
+}
+
+.logo-zael {
+    width: 10vw;
+}
+
+.logo-FrenchImpact:hover,
+.logo-dira-partners:hover,
+.logo-search-your-team:hover,
+.logo-congo-invest-consulting:hover,
+.logo-zael:hover,
+.logo-winnies:hover,
+.logo-keitas-systems:hover,
+.logo-queope:hover,
+.logo-tempeus:hover,
+.logo-jamaafunding:hover,
+.logo-centre-euro-Africa:hover,
+.logo-brainstorm-visuals:hover,
+.logo-groupe-de-presse:hover,
+.logo-fiad:hover,
+.logo-bv-agency:hover,
+.logo-powerful-africa:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}

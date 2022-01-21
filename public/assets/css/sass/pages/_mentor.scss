@@ -1,0 +1,263 @@
+h1 {
+    margin-bottom: 1vh;
+    padding-top: 7vh;
+    text-align: center;
+    font-weight: $Bold;
+    font-size: 3.5rem;
+    margin-top: 12vh;
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+        font-size: 2.9rem;
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+        font-size: 3.1rem;
+
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+        font-size: 3.3rem;
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {}
+}
+
+
+
+
+.section-mentor1 {
+    margin-bottom: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 1%;
+    color: $color1;
+
+    .texte {
+        font-style: oblique;
+        border-radius: 5px;
+        text-align: center;
+        background: white;
+
+        .introduction {
+            margin-bottom: 4vh;
+        }
+    }
+}
+
+
+
+.section-mentor2 {
+    background: $color3;
+    border-radius: 15px;
+    margin: 4% 10%;
+    padding: 1%;
+    color: $color1;
+
+    h2 {
+        margin-bottom: 7vh;
+        padding-top: 7vh;
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 2.5rem;
+
+    }
+
+    h3 {
+        margin-bottom: 4vh;
+        padding-top: 7vh;
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 1.6rem;
+
+    }
+
+
+    .flex-mentor {
+        display: flex;
+        justify-content: center;
+
+        .flex-box-mentor {
+            flex: 1;
+            border-radius: 5px;
+            margin: 1%;
+            background: white;
+            margin-bottom: 5%;
+        }
+
+        .para-icone {
+            text-align: center;
+            margin: auto;
+            padding: 3%;
+            font-size: 1.3rem;
+        }
+
+        i {
+            font-weight: $Bold;
+            font-size: 5rem;
+            transform: translateX(90%);
+            padding-bottom: 15%;
+
+        }
+    }
+
+    // X-Small devices (portrait phones, less than 576px)
+    @media (max-width: 575.98px) {
+
+        //  background : yellow;    
+        .flex-mentor {
+            display: block;
+
+            .para-icone {
+                text-align: center;
+                padding: none;
+            }
+
+            i {
+                margin-left: 30%;
+                padding-bottom: 5%;
+
+            }
+        }
+
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (min-width: 576px) and (max-width: 767.98px) {
+
+        // background : red;    
+        .flex-mentor {
+            display: block;
+
+            .para-icone {
+                text-align: center;
+                padding: none;
+            }
+
+            i {
+                margin-left: 37%;
+                padding-bottom: 5%;
+
+            }
+        }
+
+    }
+
+    // Medium devices (tablets, less than 992px)
+    @media (min-width: 768px) and (max-width: 991.98px) {
+
+        // background : blue;    
+        .flex-mentor {
+            display: block;
+
+            .para-icone {
+                text-align: center;
+                padding: none;
+            }
+
+            i {
+                margin-left: 41%;
+                padding-bottom: 5%;
+
+            }
+        }
+    }
+
+    // Large devices (desktops, less than 1200px)
+    @media (min-width: 992px) and (max-width: 1199.98px) {
+
+        // background : green;  
+        .flex-mentor {
+            display: block;
+
+            .para-icone {
+                text-align: center;
+                padding: none;
+            }
+
+            i {
+                margin-left: 41%;
+                padding-bottom: 5%;
+
+            }
+        }
+    }
+}
+
+.section-mentor3 {
+    // background: $color3;
+    border-radius: 15px;
+    margin: 8% 10%;
+    padding: 4%;
+    color: $color1;
+
+    h2 {
+        margin-bottom: 7vh;
+        padding-top: 2vh;
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 2.5rem;
+
+    }
+
+    ul {
+
+        li {
+            list-style-type: square !important;
+            margin-left: 5%;
+            font-style: oblique;
+        }
+    }
+
+    p {
+        margin-left: 5%;
+        font-style: oblique;
+
+    }
+
+}
+
+
+.section-mentor4 {
+    background: $color3;
+    border-radius: 15px;
+    margin: 8% 10%;
+    padding: 4%;
+    color: $color1;
+
+    h2 {
+        margin-bottom: 7vh;
+        padding-top: 2vh;
+        text-align: center;
+        font-weight: $Bold;
+        font-size: 2.5rem;
+
+    }
+
+    .fas {
+        font-weight: $Bold;
+        font-size: 5rem;
+        margin: auto;
+        // transform :translateX(90%);
+        padding-bottom: 15%;
+    }
+}
+
+
+button {
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 1%;
+    background: $color3;
+    color: white;
+    margin-left: 45%;
+    margin-bottom: 4%;
+
+    a {
+        font-weight: $Bold;
+    }
+
+}

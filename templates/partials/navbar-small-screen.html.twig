@@ -1,0 +1,133 @@
+<!-- HEADER / NAVBAR / SMALL SCREEN < 1220px -->
+<header id="header">
+	<div class="row container">
+		<!-- 4 PARTIES : Menu-Recherche / Logo / Don-Connexion-lang / input search absolut -->
+		<!-- I. MENU-Recherche -->
+			<div class="part menu-search"> <div class="menu-toggle" id="burger">
+				<a href="#" onclick="showMenu()">
+					<i class="fas fa-bars burger"></i>
+				</a>
+				<!-- le menu qui s'affiche -->
+				<ul class="le-menu" id="lemenu">
+					<li class="menu-item" id="accueil">
+						<a href="{{path('home')}}" class="btn">Accueil</a>
+					</li>
+					<li class="menu-item" id="apropos">
+						<a href="#apropos" class="btn">A Propos</a>
+						<div class="menu-item__sub">
+							<a href="{{path('pages_about')}}">Qui Sommes-Nous</a>
+							<a href="{{path('pages_equipe_afrique')}}">Nos Antennes</a>
+							<a href="">Contact</a>
+						</div>
+					</li>
+					<li class="menu-item" id="actions">
+						<a href="#actions" class="btn">Actions</a>
+						<div class="menu-item__sub">
+							<a href="">Actualités</a>
+							<a href="{{path('pages_evenements')}}">Évènements</a>
+							<a href="">Agenda</a>
+						</div>
+					</li>
+					<li class="menu-item" id="incubateur">
+						<a href="#incubateur" class="btn">Incubateur</a>
+						<div class="menu-item__sub">
+							<a href="">Programmes</a>
+							<a href="">Incubation</a>
+							<a href="">Accélération</a>
+							<a href="">Formation</a>
+						</div>
+					</li>
+					{# <li class="menu-item" id="reseau">
+											<a href="#reseau" class="btn">Réseau International</a>
+											<div class="menu-item__sub">
+												<a href="">Pays</a>
+												<a href="">Mentors</a>
+												<a href="">Partenaires</a>
+												<a href="">Investisseurs</a>
+											</div>
+										</li> #}
+					<li class="menu-item" id="rejoindre">
+						<a href="#rejoindre" class="btn">Nous Rejoindre</a>
+						<div class="menu-item__sub">
+							<a href="{{path('pages_ambassadeur')}}">Ambassadeur</a>
+							<a href="{{path('pages_mentor')}}">Mentor</a>
+							<a href="{{path('pages_incubateur')}}">Incubateur</a>
+							<hr>
+							<a href="{{path('pages_partenaire')}}">Partenaire</a>
+							<a href="">Investisseur</a>
+							<hr>
+							<a href="{{path('pages_adherent')}}">Adhérent(e)</a>
+							<a href="{{path('pages_benevole')}}">Bénévole</a>
+							<a href="">Donateur/trice</a>
+
+						</div>
+					</li>
+					<li class="menu-item" id="connexion">
+						<a href="#" class="btn">Connexion</a>
+						<div class="menu-item__sub">
+							<a href="{{path('app_login')}}">Se Connecter</a>
+							<a href="{{path('app_register')}}">Créer Un Compte</a>
+						</div>
+					</li>
+					<li class="menu-item">
+						<a href="{{path('pages_dons')}}" class="btn" id="don">Faire un Don
+							<i class="fas fa-hand-holding-usd"></i>
+						</a>
+					</li>
+					<li class="menu-item">
+						<a href="" class="btn">Réglages</a>
+						<div class="menu-item__sub">
+							<a href="">Langue</a>
+							<a href="">Mode Nuit</a>
+						</div>
+					</li>
+				</ul>
+				<!-- fin du menu qui s'affiche -->
+			</div>
+			<!-- fin div.menu-burger -->
+
+
+			<a href="#" class="btn-searchbar" onclick="showSearchBar()">
+				<i class="fas fa-search"></i>
+			</a>
+
+		</div>
+		<!-- FIN div.part menu-search-->
+
+		<!-- II. LOGO milieu -->
+		<div class="part logo-mobile">
+			<p>MAMA AFRICA
+				<br><span>Innovation</span><br>
+			</p>
+		</div>
+
+		<!-- III. Don-Connexion-langue -->
+		<div class="part donate-connexion-lang">
+			<div class="donate">
+				<a href="">
+					<i class="fas fa-hand-holding-usd"></i>
+				</a>
+			</div>
+			<div class="user">
+				<a href="">
+					<i class="fas fa-user"></i>
+				</a>
+			</div>
+			{# <div class="lang">
+													<a href="#">
+														<img onclick="altFlag-mobile()" id="lang-flag-mobile" src="assets/img/svg/Flag_of_France.svg" alt="drapeau-france">
+													</a>
+												</div> #}
+		</div>
+
+		<!-- IV. SearchBar (position absolute) -->
+		{# <div class="part searchbar" id="searchbar">
+											<input class="search-txt" type="text" name="" placeholder="je recherche...">
+											<button type="submit">Trouver</button>
+											<div id="searchoverlay" onclick="showSearchBar()"></div>
+								
+										</div> #}
+
+
+	</div>
+</header>

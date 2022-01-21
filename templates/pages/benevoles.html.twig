@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Devenir benevole- Mama Africa Innovation
+{% endblock %}
+
+{% block body %}
+	{% include "partials/margin-top-5rem.html.twig" %}
+	<body class="bg-benevole">
+
+
+		<main>
+			<section class="section-benevole">
+				<h1>Devenir bénévole</h1>
+				<p class="para1">Être bénévole du réseau Mama Africa Innovation c’est mettre son énergie et son enthousiasme au service d’une cause qui résonne en soi, pour une société plus inclusive, au sein d’une équipe unie et talentueuse.</p>
+				<img src="{{asset('assets/img/rejoindre/girls.jpg')}}" loading="lazy" alt="photo d'un groupe de jeunes filles travaillant ensemble sur leurs ordinateurs portables">
+				<p class="para2">Tu souhaites nous rejoindre? Il te suffit de remplir le formulaire d'inscription, nous te recontacterons très bientôt!</p>
+				<button>
+					<a href="https://docs.google.com/forms/d/19J7bCVyLqPBBuzjRRP4y0IDPwcd9KvuvzqySj_Hqsjs/viewform?edit_requested=true" target="_blank">Formulaire d'inscription</a>
+				</button>
+			</section>
+		</main>
+
+	</body>
+{% endblock %}

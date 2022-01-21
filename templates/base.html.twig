@@ -1,19 +1,81 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        {# Run `composer require symfony/webpack-encore-bundle`
-           and uncomment the following Encore helpers to start using Symfony UX #}
-        {% block stylesheets %}
-            {#{{ encore_entry_link_tags('app') }}#}
-        {% endblock %}
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Mama Africa Innovation
+			{% endblock %}
+		</title>
+		<meta name="description" content="Mama Africa Innovation est un portail interactif recensant les profils d'entrepreneurs vivant en Europe, Afrique et le reste du monde. Il a pour but de fédérer les entrepreneurs africains, européens et mondiaux ainsi que les bailleurs de fonds, au sein d’une même base de données. Mama Africa Innovation a pour vocation de faciliter, développer l’intelligence collective et promouvoir, renforcer les compétences des entrepreneurs sociaux dans le monde entier via notre incubateur de la diversité. Mama Africa Innovation souhaite accélérer le vivre ensemble, les opportunités d’affaires entre les investisseurs du monde entier en général et de l’Afrique en particulier.">
 
-        {% block javascripts %}
-            {#{{ encore_entry_script_tags('app') }}#}
-        {% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
-    </body>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta
+		name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link
+		href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<!-- Autres méta-->
+		<meta name="Robots" content="Index">
+		<meta name="author" content="Naïri, Jesoph, Descamps, march 2021">
+		<meta
+		name="Copyright" content=" ©2021 Mama Africa Innovation">
+
+		<!--Fontawesome-->
+		<script src="https://kit.fontawesome.com/a9a5bb1d25.js" crossorigin="anonymous"></script>
+		{% block stylesheets %}
+			<!-- StyleSheet-->
+			<link
+			rel="stylesheet" href="{{asset("assets/css/sass/app.css")}}">
+			<!-- Slick sheet-->
+			<link rel="stylesheet" href="{{asset("assets/slick/slick-theme.css")}}">
+			<link
+			rel="stylesheet" href="{{asset("assets/slick/slick.css")}}">
+			<!-- AOS sheet-->
+			<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+		<!--Bootstrap-->
+			{# <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> #}
+
+		{% endblock %}
+
+
+		{% block javascripts %}
+			<!--JQuery-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.form/4.3.0/jquery.form.min.js" integrity="sha512-YUkaLm+KJ5lQXDBdqBqk7EVhJAdxRnVdT2vtCzwPHSweCzyMgYV/tgGF4/dCyqtCC2eCphz0lRQgatGVdfR0ww==" crossorigin="anonymous"></script>
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<script src="{{asset("assets/js/show-menu-mobile.js")}}"></script>
+			<!--JQuery section marraine-->
+			<script type="text/javascript" src="jquery.js"></script>
+			<!-- Slick Caroussel-->
+			<script src="{{asset("assets/slick/slick.min.js")}}"></script>
+			<script type="text/javascript" src="{{("assets/slick/slick-caroussel.js")}}"></script>
+			<!--Bootstrap JS-->
+
+			{# // <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> #}
+
+		{% endblock %}
+	</head>
+
+	<body>
+		<span style="color:red">
+			Site démo par Gary Jesoph
+		</span>
+		{% include 'partials/navbar.html.twig' %}
+		{% include "partials/navbar-small-screen.html.twig" %}
+
+		{% block body %}{% endblock %}
+
+		{% include 'partials/footer.html.twig' %}
+		{% block javascript %}
+			<script src="{{asset("assets/js/hide-show-navbar-onscroll.js")}}"></script>
+			<script src="{{asset("assets/js/section-marraine.js")}}"></script>
+			<script src="{{asset("assets/js/pop-up-contact.js")}}"></script>
+
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+				AOS.init();
+			</script>
+		{% endblock %}
+
+	</body>
 </html>

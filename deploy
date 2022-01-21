@@ -1,0 +1,2 @@
+#!/bin/sh
+rsync -av ./ u101736306@access837606296.webspace-data.io:~/maiwebsite --include=vendor --include=public/.htaccess  --exclude-from=.gitignore --exclude=".*"

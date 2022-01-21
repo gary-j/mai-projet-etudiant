@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier mot de passe- Mama Africa Innovation{% endblock %}
+
+{% block body %}
+
+<body class="bg-reset">
+    
+
+  
+
+    {{ form_start(resetForm) }}
+      <h1>Modifier le mot de passe</h1>
+        {{ form_row(resetForm.plainPassword) }}
+        <button class="reset-btn">Modifier le mot de passe</button>
+    {{ form_end(resetForm) }}
+
+</body>
+{% endblock %}

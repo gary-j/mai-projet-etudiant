@@ -1,0 +1,61 @@
+{% extends 'base.html.twig' %}
+
+
+{% block title %}Faire un don - Mama Africa Innovation
+{% endblock %}
+
+{% block body %}
+	{% include "partials/margin-top-5rem.html.twig" %}
+
+
+	<main class="bg-dons">
+
+		<section class="section-dons">
+
+			<h1 class='title-dons'>Faire un don</h1>
+			<h2>Le besoin urgent d’une transition agricole et alimentaire avec un rôle renforcé des femmes</h2>
+			<img src="{{asset('assets/img/illustrations/femme_champs.jpg')}}" alt="femme africaine dans un champs avec son bébé sur le dos">
+
+
+			<p>
+				Votre générosité est essentielle pour poursuivre notre action de transition agricole et alimentaire durable, favorisant l’autonomisation des femmes, la dynamisation et le changement d’échelle des initiatives.
+																								                        Comme le soulignent les grands accords internationaux (Objectifs de développement durable des Nations-Unies, Accords de Paris sur le climat…), il est nécessaire d’engager le monde sur une voie durable et résiliente qui inclut notamment une transformation des conditions de production et de consommation, un changement des modèles d’agriculture et d’alimentation, et une implication renforcée des femmes dans la vie sociale et économique.
+																								                        Votre don ouvre droit à une réduction fiscale car il remplit les conditions générales prévues aux articles 200 et 238 bis du code général des impôts.</p>
+
+			<p class="faire-don">Je donne avec
+			</p>
+
+			<div class="flex-boutons">
+				<div class="boutons-paiement">
+
+					<img class="helloasso" src="{{asset('assets/img/logos/helloasso.jpeg')}}" alt="logo helloasso">
+
+					<div class="helloAsso">
+						<iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/mama-africa-innovation/formulaires/1/widget-bouton" target="_blank" style="width:100%;height:70px;border:none;"></iframe>
+					</div>
+				</div>
+
+
+				<div class="boutons-paiement">
+
+					<img src="{{asset('assets/img/logos/paypal.jpeg')}}" alt="logo paypal">
+
+
+					<div class="payPal">
+						<form action="https://www.paypal.com/donate" method="post" target="_top">
+							<input type="hidden" name="hosted_button_id" value="D9C67JZ5TZ7CJ"/>
+							<input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button"/>
+							<img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1"/>
+						</form>
+					</div>
+				</div>
+
+			</div>
+
+
+		</section>
+
+
+	</main>
+
+{% endblock %}
